@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Courses</title>
+    <link rel="stylesheet" href="css\style.css">
+</head>
+
+<body>
+
+        <div class="image-container">
+                
+                <a href="#ex1" rel="modal:open"><img class="image" src="image1.png"alt="1"></a>
+                <a href="#ex2" rel="modal:open"><img class="image" img src="image2.png"alt="2"></a>
+                <a href="#ex1" rel="modal:open"><img class="image" img src="image3.png"alt="3"></a>
+                <a href="#ex1" rel="modal:open"><img class="image" src="image4.png"alt="4"></a>
+                <a href="#ex1" rel="modal:open"><img class="image" img src="image5.png"alt="5"></a>
+                <a href="#ex1" rel="modal:open"><img class="image" img src="image6.png"alt="6"></a>
+                
+           
+        </div>
+
+        <!-- Modal HTML embedded directly into document -->
+        <div id="ex1" class="modal">
+        <p>Thanks for clicking. That felt good.</p>
+        <a href="#" rel="modal:close">Close</a>
+      </div>
+
+      <div id="ex2" class="modal">
+            <p>22222222222222222222</p>
+            <a href="#" rel="modal:close">Close</a>
+          </div>
+      
+
+    <div class="courses">
+
+        <h1>Courses</h1>
+        <h2>Feedback</h2>
+        
+        <div>
+                <button onclick="changeBold()">B</button>
+
+                <button onclick="changeitalic()">I</button>
+        
+                <button onclick="changestyle()">Underline</button>
+        
+        
+                <select onchange="changeSize(this)">
+        
+                    <option value="20px">Vingt</option>
+        
+                    <option value="30px">Trente</option>
+        
+                    <option value="40px">40px</option>
+        
+                    <option value="50px">50px</option>
+        
+                </select>
+        
+        
+        
+                <select onchange="changefontfamily(this)">
+        
+                    <option value="arial">Arial</option>
+                    <option value="sans-serif">sans-serif</option>
+                    <option value="Geneva">Geneva</option>
+        
+                </select>
+        </div>
+        
+
+        <br>
+
+        <textarea class="txt" cols="60" rows="6" id="message"></textarea>
+    </div>
+
+
+
+
+    <p id="mypara">this is a paragraph</p>
+    <p class="Tracks">AI</p>
+    <p class="Tracks">WEB</p>
+    <p class="Tracks">GAME</p>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
